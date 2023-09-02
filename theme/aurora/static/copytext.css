@@ -1,0 +1,38 @@
+.copy-btn {
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid brown;
+            font-size: 18px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+/* 下面是提示框的样式 */
+#copy-tip-box {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -50px;
+    transform: translateY(-100%);
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: transform .3s;
+    z-index: 999999999;
+}
+
+#copy-tip-box.active {
+    transform: translateY(20px);
+    transition: all .3s ease;
+    box-shadow: 0 0 10px #999;
+}
+#copy-tip-box .copy-icon {
+    width: 14px;
+    color: #52C41A
+}
+#copy-tip-box .copy-dec {
+    font-size: 14px;
+    padding-left: 5px;
+    color: #555;
+}
